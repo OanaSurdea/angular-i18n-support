@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "learning-internationalization": {
+    "learn-internationalization": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/learning-internationalization",
+            "outputPath": "dist/learn-internationalization",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "learning-internationalization:build:production"
+              "browserTarget": "learn-internationalization:build:production"
             },
             "development": {
-              "browserTarget": "learning-internationalization:build:development"
+              "browserTarget": "learn-internationalization:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "learning-internationalization:build"
+            "browserTarget": "learn-internationalization:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "learning-internationalization"
+  "defaultProject": "learn-internationalization"
 }
