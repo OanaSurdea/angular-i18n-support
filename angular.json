@@ -5,6 +5,19 @@
   "projects": {
     "learn-internationalization": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "it": {
+            "translation": "src/i18n/messages.it.json",
+            "baseHref": "it"
+          },
+          "ro": {
+            "translation": "src/i18n/messages.ro.json",
+            "baseHref": "ro"
+          }
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -25,6 +38,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
@@ -58,6 +72,15 @@
               ],
               "outputHashing": "all"
             },
+            "en": {
+              "localize": ["en"]
+            },
+            "it": {
+              "localize": ["it"]
+            },
+            "ro": {
+              "localize": ["ro"]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -77,6 +100,15 @@
             },
             "development": {
               "browserTarget": "learn-internationalization:build:development"
+            },
+            "en": {
+              "browserTarget": "learn-internationalization:build:en"
+            },
+            "it": {
+              "browserTarget": "learn-internationalization:build:it"
+            },
+            "ro": {
+              "browserTarget": "learn-internationalization:build:ro"
             }
           },
           "defaultConfiguration": "development"

@@ -4,11 +4,11 @@
   <span class="header__spacer"></span>
 
   <ng-container>
-    <button mat-button routerLink="/">
+    <button mat-button [routerLink]="'/home'">
       Home
     </button>
 
-    <button mat-button routerLink="/about" routerLinkActive="router-link-active">
+    <button mat-button [routerLink]="'/about'" routerLinkActive="router-link-active">
       About
     </button>
 
@@ -23,7 +23,7 @@
     </button>
 
     <mat-menu #menu="matMenu">
-      <a *ngFor="let language of languages" mat-menu-item routerLink="/{{language.locale}}">
+      <a *ngFor="let language of languages" mat-menu-item href="/{{language.locale}}/">
         {{ language.label }}
       </a>
     </mat-menu>
