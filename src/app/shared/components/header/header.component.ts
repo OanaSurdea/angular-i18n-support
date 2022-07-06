@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IAppLanguage } from 'src/app/shared/interfaces';
 
 @Component({
@@ -6,14 +6,16 @@ import { IAppLanguage } from 'src/app/shared/interfaces';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   @Input() title?: string;
   @Input() languages?: IAppLanguage[];
   @Input() selectedLanguage?: IAppLanguage;
+  @Output() onLanguageSelect = new EventEmitter<IAppLanguage>();
 
   constructor() { }
 
-  ngOnInit(): void {
+  public selectNewLanguage(language: IAppLanguage): void {
+    this.onLanguageSelect.emit(language);
   }
 
 }

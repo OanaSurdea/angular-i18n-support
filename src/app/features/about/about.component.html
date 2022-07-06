@@ -1,24 +1,24 @@
-<h1 i18n="About page title message">
-  Welcome to the about page.
-</h1>
+<h1>{{ 'i18n.about.welcome' | translate }}</h1>
 
 <mat-card class="card">
   <mat-card-header>
     <div mat-card-avatar class="card__image"></div>
-    <mat-card-title i18n="Dog breed type message">{{ dogBreeds[0].name }}</mat-card-title>
-    <mat-card-subtitle i18n="Dog breed label message">Dog Breed</mat-card-subtitle>
+    <mat-card-title>{{ dogBreeds[0].name }}</mat-card-title>
+    <mat-card-subtitle>{{ 'i18n.about.dogBreedCardLabel' | translate }}</mat-card-subtitle>
   </mat-card-header>
 
-  <img mat-card-image [src]="dogBreeds[0].imageUrl" i18n-alt alt="Photo of a Shiba Inu dog">
+  <img
+    mat-card-image
+    [src]="dogBreeds[0].imageUrl"
+    [alt]="'i18n.about.dogBreedCardImageAltMessage' | translate"
+  >
 
   <mat-card-content>
-    <p i18n="Dog breed description message">
-      {{ dogBreeds[0].description }}
-    </p>
+    <p>{{ 'i18n.about.dogBreedCardDescription' | translate }}</p>
   </mat-card-content>
 
   <mat-card-actions>
-    <button mat-button i18n="Like button message">LIKE</button>
-    <button mat-button i18n="Share button message">SHARE</button>
+    <button mat-button>{{ 'i18n.about.dogBreedCardLikeButton' | translate }}</button>
+    <button mat-button>{{ 'i18n.about.dogBreedCardShareButton' | translate }}</button>
   </mat-card-actions>
 </mat-card>

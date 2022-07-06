@@ -1,7 +1,8 @@
 <app-header
   [title]="title"
-  [languages]="languages"
-  [selectedLanguage]="selectedLanguage">
+  [languages]="languageList"
+  [selectedLanguage]="selectedLanguage"
+  (onLanguageSelect)="handleLanguageSelect($event)">
 </app-header>
 
 <div class="page">

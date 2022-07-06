@@ -1,0 +1,17 @@
+{
+  "locale": "ro",
+  "i18n": {
+    "home": {
+      "welcome": "Bun venit pe pagina de start.",
+      "description": "Durerea în sine este importantă pentru principala elită adipisică."
+    },
+    "about": {
+      "welcome": "Bun venit la pagina despre noi.",
+      "dogBreedCardLabel": "Rasă de câine",
+      "dogBreedCardImageAltMessage": "Poza unui câine Shiba Inu",
+      "dogBreedCardDescription": "Shiba Inu este cea mai mică dintre cele șase rase originale și distincte de câini spitz din Japonia. Un câine mic, agil, care se descurcă foarte bine cu terenurile montane, Shiba Inu a fost crescut inițial pentru vânătoare.",
+      "dogBreedCardLikeButton": "LIKE",
+      "dogBreedCardShareButton": "SHARE"
+    }
+  }
+}

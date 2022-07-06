@@ -1,0 +1,17 @@
+{
+  "locale": "it",
+  "i18n": {
+    "home": {
+      "welcome": "Benvenuti nella pagina iniziale.",
+      "description": "Il dolore stesso è importante per la principale élite adipicida."
+    },
+    "about": {
+      "welcome": " Benvenuto nella pagina delle informazioni.",
+      "dogBreedCardLabel": "Razza di cane",
+      "dogBreedCardImageAltMessage": "Foto di un cane Shiba Inu",
+      "dogBreedCardDescription": "Lo Shiba Inu è la più piccola delle sei razze spitz originali e distinte del Giappone. Un cane piccolo e agile che affronta molto bene i terreni montuosi, lo Shiba Inu è stato originariamente allevato per la caccia.",
+      "dogBreedCardLikeButton": "LIKE",
+      "dogBreedCardShareButton": "SHARE"
+    }
+  }
+}

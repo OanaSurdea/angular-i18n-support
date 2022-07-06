@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { IAppLanguage } from './shared/interfaces';
 import { AppLanguageService } from './shared/services/app-language.service';
 
@@ -7,19 +8,29 @@ import { AppLanguageService } from './shared/services/app-language.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   public title: string = 'Learn internationalization';
-  public languages?: IAppLanguage[];
-  public selectedLanguage?: IAppLanguage;
+  public languageList: IAppLanguage[];
+  public selectedLanguage: IAppLanguage;
 
-  private appLocale?: string;
+  constructor(
+    private appLanguageService: AppLanguageService,
+    private translateService: TranslateService
+  ) {
+    this.languageList = this.appLanguageService.appLanguages;
+    this.selectedLanguage = this.appLanguageService.$selectedLanguage.value;
 
-  constructor(private appLanguageService: AppLanguageService) { }
+    this.translateService.setDefaultLang(this.selectedLanguage.code);
+    this.translateService.use(this.selectedLanguage.code);
+  }
 
-  ngOnInit(): void {
-    this.languages = this.appLanguageService.appLanguages;
+  public handleLanguageSelect(language: IAppLanguage): void {
+    this._updateSelectedLanguage(language);
+  }
 
-    this.appLocale = window.location.pathname.split('/')[1];
-    this.selectedLanguage = this.languages.find(f => f.locale === this.appLocale) || this.languages[0];
+  private _updateSelectedLanguage(language: IAppLanguage): void {
+    this.appLanguageService.$selectedLanguage.next(language);
+    this.translateService.use(language.code);
+    this.selectedLanguage = language;
   }
 }

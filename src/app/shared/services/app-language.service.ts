@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { AppLanguageEnum, AppLocaleEnum } from '../enums';
 import { IAppLanguage } from '../interfaces';
 
@@ -7,10 +8,11 @@ import { IAppLanguage } from '../interfaces';
 })
 export class AppLanguageService {
   public appLanguages: IAppLanguage[] = [
-    { locale: AppLocaleEnum.EN, label: AppLanguageEnum.English },
-    { locale: AppLocaleEnum.IT, label: AppLanguageEnum.Italian },
-    { locale: AppLocaleEnum.RO, label: AppLanguageEnum.Romanian }
+    { code: AppLocaleEnum.EN, label: AppLanguageEnum.English },
+    { code: AppLocaleEnum.IT, label: AppLanguageEnum.Italian },
+    { code: AppLocaleEnum.RO, label: AppLanguageEnum.Romanian }
   ];
+  public $selectedLanguage: BehaviorSubject<IAppLanguage> = new BehaviorSubject(this.appLanguages[0]);
 
   constructor() { }
 }

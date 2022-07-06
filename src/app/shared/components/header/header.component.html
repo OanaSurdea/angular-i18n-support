@@ -23,7 +23,7 @@
     </button>
 
     <mat-menu #menu="matMenu">
-      <a *ngFor="let language of languages" mat-menu-item href="/{{language.locale}}/">
+      <a *ngFor="let language of languages" mat-menu-item (click)="selectNewLanguage(language)">
         {{ language.label }}
       </a>
     </mat-menu>
