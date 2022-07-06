@@ -1,0 +1,27 @@
+{
+  "hosting": {
+    "public": "./dist/learn-internationalization",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/en/**",
+        "destination": "/en/index.html"
+      },
+      {
+        "source": "/it/**",
+        "destination": "/it/index.html"
+      },
+      {
+        "source": "/ro/**",
+        "destination": "/ro/index.html"
+      }
+    ],
+    "i18n": {
+      "root": "/"
+    }
+  }
+}
