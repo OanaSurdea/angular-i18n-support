@@ -1,3 +1,24 @@
 <h1 i18n="About page title message">
   Welcome to the about page.
 </h1>
+
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="card__image"></div>
+    <mat-card-title i18n="Dog breed type message">{{ dogBreeds[0].name }}</mat-card-title>
+    <mat-card-subtitle i18n="Dog breed label message">Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image [src]="dogBreeds[0].imageUrl" i18n-alt alt="Photo of a Shiba Inu dog">
+
+  <mat-card-content>
+    <p i18n="Dog breed description message">
+      {{ dogBreeds[0].description }}
+    </p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button i18n="Like button message">LIKE</button>
+    <button mat-button i18n="Share button message">SHARE</button>
+  </mat-card-actions>
+</mat-card>
