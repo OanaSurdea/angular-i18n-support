@@ -6,15 +6,17 @@
     "learn-internationalization": {
       "projectType": "application",
       "i18n": {
-        "sourceLocale": "en",
+        "sourceLocale": {
+          "code": "en"
+        },
         "locales": {
           "it": {
             "translation": "src/i18n/messages.it.json",
-            "baseHref": "it"
+            "baseHref": "it/"
           },
           "ro": {
             "translation": "src/i18n/messages.ro.json",
-            "baseHref": "ro"
+            "baseHref": "ro/"
           }
         }
       },
