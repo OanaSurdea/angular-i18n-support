@@ -4,15 +4,28 @@
   <span class="header__spacer"></span>
 
   <ng-container>
-      <mat-icon>language</mat-icon>
+    <button mat-button routerLink="/">
+      Home
+    </button>
 
-      <button mat-button [matMenuTriggerFor]="menu">
-          {{ selectedLanguage?.label }}
-          <mat-icon>arrow_drop_down</mat-icon>
-      </button>
+    <button mat-button routerLink="/about" routerLinkActive="router-link-active">
+      About
+    </button>
 
-      <mat-menu #menu="matMenu">
-          <a *ngFor="let language of languages" mat-menu-item [href]="'/' + language.locale">{{ language.label }}</a>
-      </mat-menu>
+    <span class="header__spacer"></span>
+
+    <mat-icon>language</mat-icon>
+
+    <button mat-button [matMenuTriggerFor]="menu">
+      {{ selectedLanguage?.label }}
+
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <a *ngFor="let language of languages" mat-menu-item routerLink="/{{language.locale}}">
+        {{ language.label }}
+      </a>
+    </mat-menu>
   </ng-container>
 </mat-toolbar>
