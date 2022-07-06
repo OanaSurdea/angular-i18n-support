@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="header nav-bar mat-elevation-z2">
+  <mat-label>{{ title | titlecase }}</mat-label>
+
+  <span class="header__spacer"></span>
+
+  <ng-container>
+      <mat-icon>language</mat-icon>
+
+      <button mat-button [matMenuTriggerFor]="menu">
+          {{ selectedLanguage?.label }}
+          <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+          <a *ngFor="let language of languages" mat-menu-item [href]="'/' + language.locale">{{ language.label }}</a>
+      </mat-menu>
+  </ng-container>
+</mat-toolbar>

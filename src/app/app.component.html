@@ -1,5 +1,13 @@
-<h1>{{ title }}</h1>
+<app-header
+  [title]="title"
+  [languages]="languages"
+  [selectedLanguage]="selectedLanguage">
+</app-header>
 
-<p>
+<h4 i18n="App subtitle message">
+  Welcome to the homepage of the project.
+</h4>
+
+<p i18n="App description message">
   Lorem ipsum dolor sit amet consectetur adipisicing elit.
 </p>
