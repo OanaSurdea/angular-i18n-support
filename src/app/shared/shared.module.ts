@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MaterialUiModule } from 'src/app/shared/modules/material.module';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -19,4 +19,4 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ]
 })
-export class LayoutModule { }
+export class SharedModule { }
