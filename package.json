@@ -1,5 +1,5 @@
 {
-  "name": "learn-internationalization",
+  "name": "angular-i18n-support",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

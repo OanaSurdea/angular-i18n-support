@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./dist/learn-internationalization",
+    "public": "./dist/angular-i18n-support",
     "ignore": [
       "firebase.json",
       "**/.*",
