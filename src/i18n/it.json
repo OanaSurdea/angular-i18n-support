@@ -1,12 +1,16 @@
 {
   "locale": "it",
   "i18n": {
+    "pages": {
+      "home": "Pagina iniziale",
+      "artists": "Artisti"
+    },
     "home": {
       "welcome": "Benvenuti nella pagina iniziale.",
       "description": "Benvenuti nel mondo della musica."
     },
     "artists": {
-      "welcome": " Benvenuto nella pagina delle informazioni.",
+      "welcome": "Benvenuti nella pagina degli artisti.",
       "cardLabel": "Artist",
       "cardImageAltMessage": "Foto di un cane Shiba Inu",
       "cardDescription": "Adele è una cantante e compositrice pop inglese.<br><br> È stata definita la \"Queen of Hearts\" da pubblicazioni come Vogue e Vanity Fair, mentre il Seattle Post-Intelligencer l'ha chiamata \"Queen of Soul\" per i suoi primi successi come cantautrice soul.<br><br> Nel 2014, Adele era già considerata un'icona culturale britannica, con giovani adulti provenienti dall'estero che la nominavano tra un gruppo di persone che più associavano alla cultura britannica, che includeva William Shakespeare, la regina Elisabetta II, David Beckham, J. K. Rowling, The Beatles, Charlie Chaplin e Elton John.",
