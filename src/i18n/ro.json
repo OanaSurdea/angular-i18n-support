@@ -1,11 +1,11 @@
 {
   "locale": "ro",
   "i18n": {
+    "pages": {
+      "home": "Acasă",
+      "artists": "Artiști"
+    },
     "home": {
-      "pages": {
-        "home": "Acasă",
-        "artists": "Artiști"
-      },
       "welcome": "Bun venit pe pagina de start.",
       "description": "Bun venit în lumea muzicii."
     },
