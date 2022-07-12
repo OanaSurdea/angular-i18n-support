@@ -1,0 +1,8 @@
+.card {
+  max-width: 400px;
+
+  &__image {
+    background-image: url('../../../assets/media/artists/adele-avatar.jpg');
+    background-size: cover;
+  }
+}

@@ -1,0 +1,30 @@
+<h1>{{ 'i18n.artists.welcome' | translate }}</h1>
+
+<ng-container *ngIf="artists; else noArtists">
+  <mat-card class="card" *ngFor="let artist of artists">
+    <mat-card-header>
+      <div mat-card-avatar class="card__image" ></div>
+      <mat-card-title>{{ artist.name }}</mat-card-title>
+      <mat-card-subtitle>{{ 'i18n.artists.cardLabel' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img
+      mat-card-image
+      [src]="artist.imageUrl"
+      [alt]="'i18n.artists.cardImageAltMessage' | translate"
+    >
+
+    <mat-card-content>
+      <p [innerHTML]="'i18n.artists.cardDescription' | translate"></p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button>{{ 'i18n.artists.cardLikeButton' | translate }}</button>
+      <button mat-button>{{ 'i18n.artists.cardShareButton' | translate }}</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>
+
+<ng-template #noArtists>
+  {{ 'i18n.artists.noData' | translate }}
+</ng-template>

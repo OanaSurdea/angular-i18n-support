@@ -3,15 +3,16 @@
   "i18n": {
     "home": {
       "welcome": "Benvenuti nella pagina iniziale.",
-      "description": "Il dolore stesso è importante per la principale élite adipicida."
+      "description": "Benvenuti nel mondo della musica."
     },
-    "about": {
+    "artists": {
       "welcome": " Benvenuto nella pagina delle informazioni.",
-      "dogBreedCardLabel": "Razza di cane",
-      "dogBreedCardImageAltMessage": "Foto di un cane Shiba Inu",
-      "dogBreedCardDescription": "Lo Shiba Inu è la più piccola delle sei razze spitz originali e distinte del Giappone. Un cane piccolo e agile che affronta molto bene i terreni montuosi, lo Shiba Inu è stato originariamente allevato per la caccia.",
-      "dogBreedCardLikeButton": "LIKE",
-      "dogBreedCardShareButton": "SHARE"
+      "cardLabel": "Artist",
+      "cardImageAltMessage": "Foto di un cane Shiba Inu",
+      "cardDescription": "Adele è una cantante e compositrice pop inglese.<br><br> È stata definita la \"Queen of Hearts\" da pubblicazioni come Vogue e Vanity Fair, mentre il Seattle Post-Intelligencer l'ha chiamata \"Queen of Soul\" per i suoi primi successi come cantautrice soul.<br><br> Nel 2014, Adele era già considerata un'icona culturale britannica, con giovani adulti provenienti dall'estero che la nominavano tra un gruppo di persone che più associavano alla cultura britannica, che includeva William Shakespeare, la regina Elisabetta II, David Beckham, J. K. Rowling, The Beatles, Charlie Chaplin e Elton John.",
+      "cardLikeButton": "LIKE",
+      "cardShareButton": "SHARE",
+      "noData": "Nessun dato sugli artisti disponibile."
     }
   }
 }

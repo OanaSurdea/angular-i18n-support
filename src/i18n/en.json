@@ -3,15 +3,16 @@
   "i18n": {
     "home": {
       "welcome": "Welcome to the home page.",
-      "description": "The pain itself is important to the main adipisicing elite."
+      "description": "Welcome to the world of music."
     },
-    "about": {
+    "artists": {
       "welcome": "Welcome to the about page.",
-      "dogBreedCardLabel": "Dog Breed",
-      "dogBreedCardImageAltMessage": "Photo of a Shiba Inu dog",
-      "dogBreedCardDescription": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.",
-      "dogBreedCardLikeButton": "LIKE",
-      "dogBreedCardShareButton": "SHARE"
+      "cardLabel": "Artist",
+      "cardImageAltMessage": "Photo of a Adele",
+      "cardDescription": "Adele is an English pop singer and songwriter.<br><br>She has been referred to as the \"Queen of Hearts\" by publications such as Vogue and Vanity Fair, while the Seattle Post-Intelligencer has called her \"Queen of Soul\" for her early success as a soul singer-songwriter.<br><br> In 2014, Adele was already being regarded as a British cultural icon, with young adults from abroad naming her among a group of people whom they most associated with UK culture, which included William Shakespeare, Queen Elizabeth II, David Beckham, J. K. Rowling, The Beatles, Charlie Chaplin and Elton John.",
+      "cardLikeButton": "LIKE",
+      "cardShareButton": "SHARE",
+      "noData": "No artists data available."
     }
   }
 }

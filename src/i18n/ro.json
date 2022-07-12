@@ -3,15 +3,16 @@
   "i18n": {
     "home": {
       "welcome": "Bun venit pe pagina de start.",
-      "description": "Durerea în sine este importantă pentru principala elită adipisică."
+      "description": "Bun venit în lumea muzicii."
     },
-    "about": {
+    "artists": {
       "welcome": "Bun venit la pagina despre noi.",
-      "dogBreedCardLabel": "Rasă de câine",
-      "dogBreedCardImageAltMessage": "Poza unui câine Shiba Inu",
-      "dogBreedCardDescription": "Shiba Inu este cea mai mică dintre cele șase rase originale și distincte de câini spitz din Japonia. Un câine mic, agil, care se descurcă foarte bine cu terenurile montane, Shiba Inu a fost crescut inițial pentru vânătoare.",
-      "dogBreedCardLikeButton": "LIKE",
-      "dogBreedCardShareButton": "SHARE"
+      "cardLabel": "Artist",
+      "cardImageAltMessage": "Poza unui câine Shiba Inu",
+      "cardDescription": "Adele este o cântăreață și compozitoare pop engleză.<br><br> Publicațiile precum Vogue și Vanity Fair au numit-o „Regina inimilor” în timp ce Seattle Post-Intelligencer a numit-o „Regina sufletului” pentru succesul ei timpuriu ca compozitoare și compozitoare soul.<br><br> În 2014, Adele era deja privită ca o icoană culturală britanică, tinerii adulți din străinătate numindu-o printre un grup de oameni pe care i-au asociat cel mai mult cu cultura britanică, printre care William Shakespeare, Regina Elisabeta a II-a, David Beckham, J. K. Rowling, The Beatles, Charlie Chaplin și Elton John.",
+      "cardLikeButton": "LIKE",
+      "cardShareButton": "SHARE",
+      "noData": "Nu sunt disponibile date despre artiști."
     }
   }
 }
