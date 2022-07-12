@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { IAppLanguage } from 'src/app/shared/interfaces';
+import { IAppLanguage } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-header',
