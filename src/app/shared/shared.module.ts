@@ -2,10 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { MaterialUiModule } from 'src/app/shared/modules/material.module';
+import { MaterialUiModule } from '../shared/modules/material.module';
 import { HeaderComponent } from './components/header/header.component';
-
-
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IArtist } from 'src/app/shared/interfaces';
+import { IArtist } from '../../shared/interfaces';
 
 @Component({
   selector: 'app-artists',
