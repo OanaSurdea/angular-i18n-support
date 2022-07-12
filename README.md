@@ -1,4 +1,7 @@
-# LearnInternationalization
+# angular-i18n-support
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-i18n-support)
+[View on Firebase ⚡️](https://angular-i18n-support.firebaseapp.com/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
 
