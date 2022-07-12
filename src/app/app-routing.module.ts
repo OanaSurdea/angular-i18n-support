@@ -4,7 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'about', loadChildren: () => import('./features/artists/artists.module').then(m => m.AboutModule) },
+  { path: 'artists', loadChildren: () => import('./features/artists/artists.module').then(m => m.ArtistsModule) },
   { path: '', component: HomeComponent },
 ];
 

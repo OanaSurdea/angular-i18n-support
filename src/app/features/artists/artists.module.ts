@@ -16,4 +16,4 @@ import { ArtistsComponent } from './artists.component';
     SharedModule
   ]
 })
-export class AboutModule { }
+export class ArtistsModule { }
